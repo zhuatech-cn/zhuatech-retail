@@ -102,3 +102,6 @@ curl -u admin:admin123 -H 'Content-Type: application/json' \
 
 关键词：知华科技 RETAIL、零售管理系统、门店运营管理、连锁零售平台、Java 零售系统、Spring Boot RETAIL、Vue 企业管理系统、上海软件定制开发。
 
+## 智能补货建议
+
+新增 `POST /api/retail/insights/replenishment`，依据库存位置、日均销量、交付提前期、安全天数、货架容量和最小订货量生成目标库存与补货数量，并处理订货批量取整。
