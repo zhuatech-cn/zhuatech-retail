@@ -1,4 +1,4 @@
-/* Copyright 2026 上海如静知华信息科技有限公司 */
+/* Copyright 2026 上海如静知华信息科技有限公司 · https://www.zhuatech.cn/ */
 package cn.zhuatech.retail;
 import cn.zhuatech.retail.service.ReplenishmentRecommendationService;import org.junit.jupiter.api.Test;import static org.junit.jupiter.api.Assertions.*;
 class ReplenishmentRecommendationServiceTests {private final ReplenishmentRecommendationService service=new ReplenishmentRecommendationService();
