@@ -105,3 +105,7 @@ curl -u admin:admin123 -H 'Content-Type: application/json' \
 ## 智能补货建议
 
 新增 `POST /api/retail/insights/replenishment`，依据库存位置、日均销量、交付提前期、安全天数、货架容量和最小订货量生成目标库存与补货数量，并处理订货批量取整。
+
+## 企业级零售促销发布
+
+新增 `POST /api/enterprise/retail/promotion-release`，覆盖价格、毛利、税务、门店、时间、库存、价签和回滚，返回 `ACTIVATE / REVIEW / BLOCKED`。详见 [促销发布说明](docs/ENTERPRISE_PROMOTION_RELEASE.md)。
