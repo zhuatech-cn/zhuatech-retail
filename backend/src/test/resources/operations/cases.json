@@ -1,0 +1,51 @@
+[
+  {
+    "patch": {},
+    "expected": {
+      "decision": "PASS",
+      "netUnitPrice": "#80",
+      "unitFee": "#4",
+      "unitMargin": "#26",
+      "totalMargin": "#260"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "markdownPct": "100"
+    },
+    "expected": {
+      "decision": "HOLD"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "cost": "76"
+    },
+    "expected": {
+      "decision": "REVIEW",
+      "unitMargin": "#0"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "quantity": "0"
+    },
+    "expected": {
+      "decision": "PASS",
+      "totalMargin": "#0"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "feePct": "100"
+    },
+    "expected": {
+      "decision": "HOLD"
+    },
+    "error": false
+  }
+]
